@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CouponVerse - Best Deals & Discounts</title>
+    <meta name="description"
+        content="Find the best verified coupons, promo codes, and deals for your favorite stores. Save money today with CouponVerse.">
+    <meta name="keywords" content="coupons, promo codes, discounts, deals, savings, shopping">
+    <meta name="author" content="CouponVerse">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://couponverse.com/">
+    <meta property="og:title" content="CouponVerse - Best Deals & Discounts">
+    <meta property="og:description"
+        content="Find the best verified coupons, promo codes, and deals for your favorite stores.">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://couponverse.com/">
+    <meta property="twitter:title" content="CouponVerse - Best Deals & Discounts">
+    <meta property="twitter:description"
+        content="Find the best verified coupons, promo codes, and deals for your favorite stores.">
+    <meta property="twitter:image" content="assets/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-tag"></i> Coupon<span class="text-accent">Verse</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#featured" class="active" data-i18n="nav_featured">Featured</a></li>
+                    <li><a href="#categories" data-i18n="nav_categories">Categories</a></li>
+                    <li><a href="#stores" data-i18n="nav_stores">Stores</a></li>
+                    <li><a href="#newsletter" data-i18n="nav_newsletter">Newsletter</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-picker">
+                    <button class="lang-btn" aria-label="Select Language">
+                        <i class="fa-solid fa-globe"></i> <span class="current-lang">EN</span>
+                    </button>
+                    <div class="lang-dropdown">
+                        <button data-lang="en">🇺🇸 English</button>
+                        <button data-lang="cs">🇨🇿 Čeština</button>
+                        <button data-lang="sk">🇸🇰 Slovenčina</button>
+                    </div>
+                </div>
+                <a href="#newsletter" class="btn btn-primary" data-i18n="nav_newsletter">Subscribe</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge" data-i18n="hero_badge">🚀 Verified Deals Daily</span>
+                    <h1 data-i18n="hero_title">Save More on Your Favorite Brands</h1>
+                    <p data-i18n="hero_desc">Discover thousands of verified coupons and promo codes. Stop paying full
+                        price and start saving today.</p>
+                    <!-- Search removed as requested -->
+                    <a href="#featured" class="btn btn-primary" data-i18n="hero_cta">Find Deals</a>
+
+
+                </div>
+                <div class="hero-image">
+                    <!-- Abstract 3D illustration placeholder -->
+                    <div class="floating-card card-1">
+                        <div class="store-icon"><i class="fa-brands fa-amazon"></i></div>
+                        <div class="discount">50% OFF</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="store-icon"><i class="fa-brands fa-nike"></i></div>
+                        <div class="discount">20% OFF</div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="store-icon"><i class="fa-brands fa-apple"></i></div>
+                        <div class="discount">$100 OFF</div>
+                    </div>
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="cat_title">Browse by Category</h2>
+                    <a href="#" class="view-all"><span data-i18n="cat_view_all">View All</span> <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="categories-grid">
+                    <button class="category-card active" data-category="all">
+                        <i class="fa-solid fa-border-all"></i>
+                        <span data-i18n="cat_all">All</span>
+                    </button>
+                    <button class="category-card" data-category="fashion">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span data-i18n="cat_fashion">Fashion</span>
+                    </button>
+                    <button class="category-card" data-category="tech">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span data-i18n="cat_tech">Tech</span>
+                    </button>
+                    <button class="category-card" data-category="food">
+                        <i class="fa-solid fa-burger"></i>
+                        <span data-i18n="cat_food">Food</span>
+                    </button>
+                    <button class="category-card" data-category="travel">
+                        <i class="fa-solid fa-plane"></i>
+                        <span data-i18n="cat_travel">Travel</span>
+                    </button>
+                    <button class="category-card" data-category="beauty">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                        <span data-i18n="cat_beauty">Beauty</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Coupons Section -->
+        <section id="featured" class="coupons-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="coupons_title">Trending Coupons</h2>
+                    <div class="filter-tabs">
+                        <button class="tab active" data-i18n="tab_today">Today</button>
+                        <button class="tab" data-i18n="tab_week">This Week</button>
+                        <button class="tab" data-i18n="tab_ending">Ending Soon</button>
+                    </div>
+                </div>
+                <div class="coupons-grid" id="coupons-grid">
+                    <!-- Coupons will be populated by JS -->
+                    <div class="loading-spinner">
+                        <i class="fa-solid fa-circle-notch fa-spin"></i> Loading deals...
+                    </div>
+                </div>
+                <div class="load-more-container">
+                    <button class="btn btn-secondary" data-i18n="load_more">Load More Deals</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter-section">
+            <div class="container newsletter-container">
+                <div class="newsletter-content">
+                    <h2 data-i18n="news_title">Never Miss a Deal Again</h2>
+                    <p data-i18n="news_desc">Join 50,000+ savvy shoppers and get the best coupons delivered straight to
+                        your inbox.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="input-group">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Enter your email address" required id="newsletter-email">
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="news_btn">Subscribe Now</button>
+                    </form>
+                    <p class="privacy-note" data-i18n="news_privacy">No spam, unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-tag"></i> Coupon<span class="text-accent">Verse</span>
+                    </a>
+                    <p data-i18n="footer_desc">Your ultimate destination for the best deals, discounts, and promo codes
+                        on the web.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_company">Company</h4>
+                    <ul>
+                        <li><a href="how-it-works.html">How it Works</a></li>
+                        <li><a href="data-processing.html">Data Processing</a></li>
+                        <li><a href="safety.html">Safety & Trust</a></li>
+                        <li><a href="coupon-guide.html">Coupon Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_categories">Categories</h4>
+                    <ul>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Food & Dining</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_support">Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Submit a Coupon</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CouponVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Code copied to clipboard!</span>
+    </div>
+
+    <!-- Coupon Modal -->
+    <div id="coupon-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close Modal"><i class="fa-solid fa-times"></i></button>
+            <div class="modal-header">
+                <h3 data-i18n="modal_title">Here is your code</h3>
+            </div>
+            <div class="modal-body">
+                <div class="coupon-display">
+                    <span id="modal-code" class="code-text">CODE123</span>
+                    <button id="copy-btn" class="btn btn-primary" data-i18n="modal_copy">Copy Code</button>
+                </div>
+                <div class="ad-placeholder">
+                    <p>Advertisement Space</p>
+                </div>
+                <a href="#" target="_blank" class="btn btn-outline full-width" data-i18n="modal_visit">Visit Store</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
