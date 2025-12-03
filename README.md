@@ -43,12 +43,6 @@ CouponVerse is a modern, responsive coupon website featuring verified deals, mul
     ```
 4.  Visit `http://localhost:3000`
 
-## Admin Access
-
-- **URL**: `/admin.html`
-- **Default Credentials**:
-    - Username: `Richard`
-    - Password: `080594`
 
 ## License
 
